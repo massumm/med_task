@@ -16,7 +16,7 @@ void main() {
       translations: AppTranslations(),
       locale: const Locale('en', 'US'),
       fallbackLocale: const Locale('en', 'US'),
-      initialRoute: AppRoutes.LOGIN,
+      initialRoute: AppRoutes.HOME,
       getPages: AppPages.pages,
       theme: ThemeData.light(),
       darkTheme: ThemeData.dark(),
