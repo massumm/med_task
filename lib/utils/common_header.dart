@@ -24,7 +24,7 @@ class CommonHeader extends StatelessWidget {
             if (!hideBackButton)
               IconButton(
                 icon: Image.asset(
-                  ImageAssets.backButton, // Change this to your actual asset path
+                  ImageAssets.backButton,
                   width: 24,
                   height: 24,
                 ),

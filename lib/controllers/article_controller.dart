@@ -2,6 +2,7 @@ import 'dart:convert';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:http/http.dart' as http;
+import 'package:med_task/res/app_urls.dart';
 import '../models/article_model.dart';
 
 class ArticleController extends GetxController {
@@ -30,7 +31,7 @@ class ArticleController extends GetxController {
     isLoading.value = true;
 
     final response = await http.get(
-      Uri.parse("https://jsonplaceholder.typicode.com/posts?_page=${page.value}&_limit=$limit"),
+      Uri.parse("${AppUrls.articlelistUrl}?_page=${page.value}&_limit=$limit"),
     );
 
     if (response.statusCode == 200) {
